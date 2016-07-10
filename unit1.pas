@@ -50,7 +50,8 @@ end;
 procedure TfrmFileConvertor.ApplicationProperties1DropFiles(Sender: TObject;
   const FileNames: array of String);
 begin
-  ConvertFile(FileNames[0]);
+  if FileExistsUTF8(FileNames[0]) then
+    ConvertFile(FileNames[0]);
 end;
 
 procedure TfrmFileConvertor.BitBtn1Click(Sender: TObject);
@@ -63,7 +64,8 @@ end;
 procedure TfrmFileConvertor.FormDropFiles(Sender: TObject;
   const FileNames: array of String);
 begin
-   ConvertFile(FileNames[0]);
+   if FileExistsUTF8(FileNames[0]) then
+     ConvertFile(FileNames[0]);
 end;
 
 procedure TfrmFileConvertor.ConvertFile(FileName: string);

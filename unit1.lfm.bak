@@ -112,7 +112,6 @@ object frmFileConvertor: TfrmFileConvertor
       Top = 16
       Width = 774
       Align = alClient
-      Alignment = taCenter
       TabOrder = 0
     end
     object Panel4: TPanel
