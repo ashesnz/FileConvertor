@@ -1,0 +1,97 @@
+object frmFileConvertor: TfrmFileConvertor
+  Left = 312
+  Height = 424
+  Top = 119
+  Width = 774
+  ActiveControl = Panel1
+  Caption = 'LIC File Convertor'
+  ClientHeight = 424
+  ClientWidth = 774
+  Position = poScreenCenter
+  LCLVersion = '1.6.0.4'
+  object Panel1: TPanel
+    Left = 0
+    Height = 63
+    Top = 0
+    Width = 774
+    Align = alTop
+    AutoSize = True
+    ClientHeight = 63
+    ClientWidth = 774
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      AnchorSideTop.Control = Label1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 677
+      Height = 28
+      Top = 28
+      Width = 90
+      Anchors = [akTop, akRight]
+      AutoSize = True
+      BorderSpacing.Around = 6
+      Caption = 'Convert'
+      Glyph.Data = {
+        4E010000424D4E01000000000000760000002800000012000000120000000100
+        040000000000D800000000000000000000000000000000000000000000000000
+        8000008000000080800080000000800080008080000080808000C0C0C0000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00EEEEEEEEEEEE
+        EEEEEE000000EEEEEEEEEEEEEEEEEE000000EE00000000000EEEEE000000EE00
+        3333333330EEEE000000EE0B03333333330EEE000000EE0FB03333333330EE00
+        0000EE0BFB03333333330E000000EE0FBFB00000000000000000EE0BFBFBFBFB
+        0EEEEE000000EE0FBFBFBFBF0EEEEE000000EE0BFB0000000EEEEE000000EEE0
+        00EEEEEEEE000E000000EEEEEEEEEEEEEEE00E000000EEEEEEEEEE0EEE0E0E00
+        0000EEEEEEEEEEE000EEEE000000EEEEEEEEEEEEEEEEEE000000EEEEEEEEEEEE
+        EEEEEE000000EEEEEEEEEEEEEEEEEE000000
+      }
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object Label1: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 7
+      Height = 15
+      Top = 7
+      Width = 51
+      BorderSpacing.Around = 6
+      Caption = 'File name'
+      ParentColor = False
+    end
+    object FileNameEdit1: TFileNameEdit
+      AnchorSideLeft.Control = Label1
+      AnchorSideTop.Control = Label1
+      AnchorSideTop.Side = asrBottom
+      Left = 13
+      Height = 23
+      Top = 28
+      Width = 662
+      DialogOptions = []
+      FilterIndex = 0
+      HideDirectories = False
+      ButtonWidth = 23
+      NumGlyphs = 1
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 6
+      BorderSpacing.Top = 6
+      BorderSpacing.Bottom = 6
+      MaxLength = 0
+      TabOrder = 1
+    end
+  end
+  object Splitter1: TSplitter
+    Left = 0
+    Height = 361
+    Top = 63
+    Width = 5
+  end
+  object mmoTextPreview: TMemo
+    Left = 5
+    Height = 361
+    Top = 63
+    Width = 769
+    Align = alClient
+    TabOrder = 2
+  end
+end
